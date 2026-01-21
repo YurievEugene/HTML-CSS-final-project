@@ -1,46 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
-img{
-    max-width: 100%;
-    height: auto;
+
+/*------------header----------*/
+
+header{
+    height: 86px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #f0f0f0;
 }
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-.header_iner {
+header .container{
+    width: 75vw;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 86px;
 }
-.navigation_list {
+header div{
+    text-align: center;
+}
+header nav ul{
     display: flex;
-    list-style: none;
-    gap: 30px;
-}
-.navigation_link {
-    text-decoration: none;
-    color: #18191F;
-    font-weight: 500;
-}
-.header_action {
-    display: flex;
+    gap: 50px;
     align-items: center;
-    gap: 20px;
 }
-
-.search-btn {
-    background: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border: none;
+header nav a{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+header img{
+    max-width: 100%;
+    height: auto;
 }
 .coffee-btn {
     display: flex;
@@ -53,4 +60,86 @@ img{
     width: 213px;
     height: 44px;
     border-radius: 4px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+
+/*---------------------Dasteen--------------*/
+
+.Dasteen{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 164px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: #EFF0F3;
+    padding-left: 95px;
+}
+.Dasteen img{
+    margin-right: 75px;
+}
+.Dasteen div{
+    width: 664px;
+    padding-left: 95px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+}
+.Dasteen div h1{
+    font-family: "Plus Jakarta Sans";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    width: 617px;
+    opacity: 1;
+}
+.Dasteen div p{
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    font-style: "Regular";
+    font-size: 20px;
+    color: #9A9494;
+    width: 700px;
+    line-height: 1.6;
+    border-left: 3px solid #2B2C34;
+    padding-left: 20px;
+}
+.email{
+    width: 100%;
+    max-width: 664px;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 16px;
+}
+.Dasteen input{
+    flex: 1;
+    width: 444px;
+    height: 67px;
+    min-height: 67px;
+    gap: 10px;
+    border-radius: 8px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #C0C0C0;
+    border-radius: 8px;
+    border: none;
+}
+.email button{
+    width: 145px;
+    height: 67px;
+    flex-shrink: 0; 
+    border: none;
+    background-color: #6246EA;
+    color: #FFFFFE;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
 }
