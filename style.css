@@ -21,7 +21,7 @@ header{
     top: 0;
     border-bottom: 1px solid #f0f0f0;
 }
-header .container{
+.container{
     width: 75vw;
     max-width: 1440px;
     display: flex;
@@ -215,4 +215,125 @@ header img{
 .Category_cards div:hover{
     color: white;
     background-color: #6246EA;
+}
+
+/*----------------------Main Articles-----------------*/
+
+.Articles{
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    font-family: "Plus Jakarta Sans";
+}
+.Article_category{
+    margin-bottom: 50px;
+}
+.Article_category_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.Article_category_header h4{
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+.Article_category_header a{
+    font-size: 20px;
+    color: black;
+}
+.Article_cards{
+    margin-top: 30px;
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+
+}
+.Article_cards>div {
+    flex: 0 1 285px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.Article_cards>div>img{
+    width: 100%;
+    height: 198px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.Article_cards h4{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #2B2C34;
+}
+.Author_info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row !important;
+    gap: 12px;
+    margin-top: auto;
+    width: 100%;
+}
+.Author_info img{
+    width: 57px !important;
+    height: 57px !important;
+    border-radius: 100% !important;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.Author_text{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.Author_name{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #2B2C34;
+}
+.Date{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #2B2C34;
+}
+.Articles .container{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.More_article_button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.More-btn{
+    width: 145px;
+    height: 67px;
+    flex-shrink: 0; 
+    border: none;
+    background-color: #6246EA;
+    color: #FFFFFE;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
 }
